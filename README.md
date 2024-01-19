@@ -25,3 +25,17 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
+SELECT (item_name),price
+FROM  superstore
+ORDER BY price DESC;
+
+SELECT sum (price)
+FROM superstore;
+
+SELECT SUM(price), category
+FROM superstore
+WHERE category='Kitchen Supplies';
+
+SELECT (item_name),stock_quantity
+FROM superstore
+ORDER BY stock_quantity ASC;
